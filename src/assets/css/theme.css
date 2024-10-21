@@ -1,0 +1,5 @@
+body {
+  --theme-color: hsla(255, 88%, 64%, 1);
+  --theme-button-bg-color: hsla(255, 88%, 64%, 1);
+  --theme-button-text-color: #fff;
+}

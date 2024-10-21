@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+		"target": "es5",
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"module": "esnext",
+		"allowJs": true,
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"noFallthroughCasesInSwitch": true,
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"noEmit": true,
+		"jsx": "react-jsx",
+		"outDir": "./dist",
+		"baseUrl": "./",
+		"paths": {
+			"@/*": ["src/*"],
+			// fix: Attempted import error: 'NetworkEnum' is not exported from '@aelf-web-login/wallet-adapter-base' (imported as 'NetworkEnum').
+			"@aelf-web-login/*": ["./node_modules/@aelf-web-login/*"]
+		}
+	},
+  "include": [
+    "src"
+  ],
+}
