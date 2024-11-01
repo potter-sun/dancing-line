@@ -48,6 +48,7 @@
     "start": "dotenv -e .env.development craco start",
     "start:ci": "dotenv -e .env.production craco start",
     "build": "dotenv -e .env.production craco build",
+    "build:dev": "dotenv -e .env.development craco build",
     "eject": "craco eject"
   },
   "eslintConfig": {

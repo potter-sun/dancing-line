@@ -13,6 +13,7 @@ import { sleep } from '@/tools/schedual';
 import { IframeEventEnum, IframeEventTypeEnum } from '@/types/common';
 import { useAelfWallet } from '@/hooks/wallet';
 import { setInfo, setPostDisconnectAction } from '@/store/features/userSlice';
+import { ErrorTip } from './BoxTip';
 
 const checkOrderResultInterval = async (txId: string) => {
   let checkResult = false
@@ -128,22 +129,22 @@ export function WebGLMessageSubscriber(props: { sendMessage: Function, isLoaded:
           props.sendMessage(GAME_OBJECT, IframeEventEnum.ON_PAY, JSON.stringify(payload))
 
           const { data: user } = await fetchUser()
-          props.sendMessage(GAME_OBJECT, IframeEventEnum.ON_GET_USER_INFO, {
+          props.sendMessage(GAME_OBJECT, IframeEventEnum.ON_GET_USER_INFO, JSON.stringify({
             eventType: IframeEventTypeEnum.GET_USER_INFO,
             eventData: user || {}
-          })
+          }))
           dispatch(setInfo(user))
         }
       // Web2 error like google, tg.
       } else if (res.error) {
-        message.error(`[Err] -> ${res.error || 'Web2 payment is failed without reason.'}`)
+        message.error(<ErrorTip msg={`[Err] -> ${res.error || 'Web2 payment is failed without reason.'}`}></ErrorTip>)
       } else {
       // Web3 error like portKey.
-        message.error(`[Err] Web3 payment is failed by: ${JSON.stringify(res || '{}') }`)
+        message.error(<ErrorTip msg={`[Err] Web3 payment is failed by: ${JSON.stringify(res || '{}')}`}></ErrorTip>)
       }
       
     } catch(err: any) {
-      message.error(err?.message || '[Err] Payment catch error: ' + JSON.stringify(err))
+      message.error(<ErrorTip msg={err?.message || '[Err] Payment catch error: ' + JSON.stringify(err)}></ErrorTip>)
     }
 
     dispatch(setPayAction(false))
@@ -194,7 +195,7 @@ export function WebGLMessageSubscriber(props: { sendMessage: Function, isLoaded:
       sendTransaction()
     }
     
-    if (dispatchUserInfoAction && props.isLoaded) {
+    if (dispatchUserInfoAction || props.isLoaded) {
       dispatchUserInfo()
     }
   }, [payAction, dispatchUserInfoAction, props.isLoaded])

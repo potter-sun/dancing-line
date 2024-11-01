@@ -1,6 +1,6 @@
 import { Unity } from "react-unity-webgl";
 import { useEffect,  useMemo } from 'react';
-import { message } from 'antd';
+import { message, notification } from 'antd';
 import { useAppDispatch } from "@/store/hooks";
 import { setUnityPayPayload, setPayAction, setDispatchUserInfoAction } from "@/store/features/gameSlice";
 import { WebGLMessageSubscriber } from "./WebGLMessageSubscriber";
@@ -16,6 +16,7 @@ import { isOk } from "@/tools/api";
 import { useAelfWallet } from "@/hooks/wallet";
 import { useUnity } from "@/hooks/unity";
 import { shareURL, postEvent, isViewportMounted } from '@telegram-apps/sdk';
+import { ErrorTip } from "./BoxTip";
 
 function UnityApp() {
   const dispatch = useAppDispatch()
@@ -62,7 +63,7 @@ function UnityApp() {
               }
             })
           } catch (err: any) {
-            message.error('[Err] -> tet wallet Info error: ' + err?.message)
+            message.error(<ErrorTip msg={'[Err] -> wallet Info error: ' + err?.message}></ErrorTip>)
           }
 
           break;
@@ -204,18 +205,46 @@ function UnityApp() {
         }
 
         case IframeEventTypeEnum.ON_CONNECT_WALLET: {
-          if (!walletInfo) {
+          // if (!walletInfo) {
+          //   await connectWallet()
+          // } else {
+          //   dispatch(setDispatchUserInfoAction(true))
+          // }
+          try {
+            localStorage.clear()
             await connectWallet()
-          } else {
-            dispatch(setDispatchUserInfoAction(true))
+          } catch (err: any) {
+            let description = ''
+            if (err?.nativeError) {
+              description = err.nativeError?.error + ':' + err.nativeError?.error_description
+            }
+            notification.error({
+              message: 'Connect error: ' + err?.message,
+              description,
+              duration: 60,
+            })
           }
+          // await disConnectWallet()
 
           break;
         }
 
         case IframeEventTypeEnum.ON_DISCONNECT_WALLET: {
-          await disConnectWallet()
-          dispatch(setPostDisconnectAction(true))
+          try {
+            await disConnectWallet()
+            dispatch(setPostDisconnectAction(true))
+            localStorage.clear()
+          } catch(err: any) {
+            let description = ''
+            if (err?.nativeError) {
+              description = err.nativeError?.error + ':' + err.nativeError?.error_description
+            }
+            notification.error({
+              message: 'Disconnect error: ' + err?.message,
+              description,
+              duration: 60,
+            })
+          }
           
           break;
         }
@@ -236,7 +265,7 @@ function UnityApp() {
             shareURL(url, 'Join block beats with me!');
 
           } catch (err: any) {
-            message.error('[Err] share error: ' + err.message)
+            message.error(<ErrorTip msg={'[Err] share error: ' + err.message}></ErrorTip>)
           }
 
           break;
@@ -299,6 +328,7 @@ function UnityApp() {
     };
   }, [addEventListener, removeEventListener, isLoaded, walletInfo]);
 
+  
   return <>
     {
       useMemo(
