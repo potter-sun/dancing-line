@@ -8,12 +8,11 @@ import {
   IApproveDetail,
   ISocialLogin,
   NetworkType,
-  // OpenLogin,
+  OpenLogin,
   socialLoginInPortkeyApp,
   TelegramPlatform,
 } from "@portkey/did-ui-react";
 import { devicesEnv } from "@portkey/utils";
-import OpenLogin from "./OpenLogin";
 const expirationError =
   "The verification has expired. Please reload the page to start the login process again.";
 
@@ -64,66 +63,52 @@ export const socialLoginAuthCurr = async ({
   const ctw = getCustomNetworkType();
   const currentStorage = getStorageInstance();
   // console.log(network, "network=====redirectURI");
-  console.log(
-    ctw,
-    network,
-    serviceURI,
+
+  const openlogin = new OpenLogin({
+    customNetworkType: ctw,
+    networkType: "TESTNET",
+    serviceURI: serviceURI,
     clientId,
     socketURI,
     currentStorage,
-    "pa111==fdasfadsfdasf="
-  );
-  // const pa111 = {
-  //   customNetworkType: ctw,
-  //   networkType: network || "MAINNET",
-  //   serviceURI: serviceURI,
-  //   clientId,
-  //   socketURI,
-  //   currentStorage,
-  //   // sdkUrl: 'http://localhost:3000',
-  // };
-  // console.log(pa111, "pa111");
-  // const pa = {
-  //   a: 1,
-  // };
+    // sdkUrl: 'http://localhost:3000',
+  });
+  try {
+    // check platform
+    const app = await devicesEnv.getPortkeyShellApp();
 
-  // const openlogin = new OpenLogin(pa);
-  // try {
-  //   // check platform
-  //   const app = await devicesEnv.getPortkeyShellApp();
-
-  //   if (app) return socialLoginInPortkeyApp(app, type);
-  // } catch (error) {
-  //   console.log("getPortkeyShellApp", error);
-  // }
-  // try {
-  //   if (
-  //     type === "Telegram" &&
-  //     TelegramPlatform.isTelegramPlatform() &&
-  //     ((guardianIdentifier &&
-  //       guardianIdentifier === TelegramPlatform.getTelegramUserId()) ||
-  //       !guardianIdentifier) &&
-  //     useCurrentTelegramAuth
-  //   ) {
-  //     const token = await telegramLoginAuth();
-  //     return { token, provider: "Telegram" };
-  //   }
-  // } catch (error) {
-  //   console.log("telegramLoginAuth", error);
-  // }
-  // try {
-  //   const result = await openlogin.login({
-  //     from: "openlogin",
-  //     loginProvider: type,
-  //     approveDetail,
-  //     managerAddress,
-  //     verifyType,
-  //   });
-  //   if (!result) throw "Not result";
-  //   if (result?.code) throw result.message;
-  //   console.log(result, "socialLoginAuthBySocket result===");
-  //   return result;
-  // } catch (error) {
-  //   console.log("openlogin.login", error);
-  // }
+    if (app) return socialLoginInPortkeyApp(app, type);
+  } catch (error) {
+    console.log("getPortkeyShellApp", error);
+  }
+  try {
+    if (
+      type === "Telegram" &&
+      TelegramPlatform.isTelegramPlatform() &&
+      ((guardianIdentifier &&
+        guardianIdentifier === TelegramPlatform.getTelegramUserId()) ||
+        !guardianIdentifier) &&
+      useCurrentTelegramAuth
+    ) {
+      const token = await telegramLoginAuth();
+      return { token, provider: "Telegram" };
+    }
+  } catch (error) {
+    console.log("telegramLoginAuth", error);
+  }
+  try {
+    const result = await openlogin.login({
+      from: "openlogin",
+      loginProvider: type,
+      approveDetail,
+      managerAddress,
+      verifyType,
+    });
+    if (!result) throw "Not result";
+    if (result?.code) throw result.message;
+    console.log(result, "socialLoginAuthBySocket result===");
+    return result;
+  } catch (error) {
+    console.log("openlogin.login", error);
+  }
 };
