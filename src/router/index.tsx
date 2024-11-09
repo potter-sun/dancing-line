@@ -4,10 +4,10 @@ import {
   useRoutes,
   useLocation,
 } from "react-router-dom";
-import {
-  SwitchTransition,
-  CSSTransition
-} from 'react-transition-group';
+// import {
+//   SwitchTransition,
+//   CSSTransition
+// } from 'react-transition-group';
 
 import App from "@/App";
 // import AelfDemo from '@/pages/aelf-demo/aelf-demo';
@@ -47,23 +47,23 @@ const formattedRoutes = (routes: any) => {
  * @param props transition component
  * @returns 
  */
-const TransitionApp = (props: React.PropsWithChildren) => {
-  const location = useLocation()
-  return <>
-    <SwitchTransition>
-      <CSSTransition
-        key={location.pathname}
-        classNames='fade'
-        timeout={{
-          appear: 0,
-          enter: 300,
-        }}
-      >
-        {props.children}
-      </CSSTransition>
-    </SwitchTransition>
-  </>
-}
+// const TransitionApp = (props: React.PropsWithChildren) => {
+//   const location = useLocation()
+//   return <>
+//     <SwitchTransition>
+//       <CSSTransition
+//         key={location.pathname}
+//         classNames='fade'
+//         timeout={{
+//           appear: 0,
+//           enter: 300,
+//         }}
+//       >
+//         {props.children}
+//       </CSSTransition>
+//     </SwitchTransition>
+//   </>
+// }
 
 
 
