@@ -10,7 +10,7 @@ import {
 } from 'react-transition-group';
 
 import App from "@/App";
-import AelfDemo from '@/pages/aelf-demo/aelf-demo';
+// import AelfDemo from '@/pages/aelf-demo/aelf-demo';
 
 /**
  * Router auth
@@ -72,7 +72,8 @@ const routes = [
     path: '/',
     element:
       <App>
-        <AelfDemo />
+        <div>btn</div>
+        {/* <AelfDemo /> */}
       </App>,
   },
 ]

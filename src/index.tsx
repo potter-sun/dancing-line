@@ -9,10 +9,10 @@ import {
 import './index.css';
 import { isDev } from './tools/env';
 // import * as Sentry from "@sentry/react";
-
+// import VConsole from 'vconsole'
 import ReactGA from "react-ga4";
 
-
+// new VConsole()
 if (!isDev()) {
   // GA
   ReactGA.initialize("G-RC5MV09DN0");

@@ -38,18 +38,6 @@
     antd-style "^3.5.2"
     classnames "^2.3.2"
 
-"@aelf-web-login/utils@0.1.17-alpha.6":
-  version "0.1.17-alpha.6"
-  resolved "https://mirrors.cloud.tencent.com/npm/@aelf-web-login/utils/-/utils-0.1.17-alpha.6.tgz#38ab66ab5846000f54c5650d01629e53ead3ffe9"
-  integrity sha512-fgQVeft06n4zqZHIABVefXmwN2ewZteh4Mx2077is0AxY1pF+1VQlfzZPJytGzAucOrtaJbeEmo4qQuDcF9KVw==
-  dependencies:
-    "@aelf-web-login/wallet-adapter-base" "0.1.2"
-    "@aelf-web-login/wallet-adapter-react" "0.1.2"
-    bignumber.js "^9.1.2"
-    dayjs "^1.11.11"
-    react "^18.0.0"
-    react-dom "^18.0.0"
-
 "@aelf-web-login/utils@0.1.2":
   version "0.1.2"
   resolved "https://mirrors.cloud.tencent.com/npm/@aelf-web-login/utils/-/utils-0.1.2.tgz"
@@ -62,12 +50,17 @@
     react "^18.0.0"
     react-dom "^18.0.0"
 
-"@aelf-web-login/wallet-adapter-base@0.1.17-alpha.6":
-  version "0.1.17-alpha.6"
-  resolved "https://mirrors.cloud.tencent.com/npm/@aelf-web-login/wallet-adapter-base/-/wallet-adapter-base-0.1.17-alpha.6.tgz#722b7f63ea5b4fe439b5a34a5ed83117e53e739c"
-  integrity sha512-EyN7Ak02VspTQIrZNvTpuBKaHEt3DVR/TLyFVifKS6ne3DuPU6x+I51hWao99AKpcPBHvdbZHClfnmLDhMe/HA==
+"@aelf-web-login/utils@0.2.1-alpha.2":
+  version "0.2.1-alpha.2"
+  resolved "https://registry.yarnpkg.com/@aelf-web-login/utils/-/utils-0.2.1-alpha.2.tgz#b1d6ddb4b17e11fec891f06cfcfc5751a424b45a"
+  integrity sha512-byi2eEkSC76FEJYtkxDMwq0J6V1moB+7Rupuwz33FivA8jNZxb8EdvmXyll6Jb2qu2qXPx2DSRSGPhy16Lg2kw==
   dependencies:
-    eventemitter3 "^5.0.1"
+    "@aelf-web-login/wallet-adapter-base" "0.1.2"
+    "@aelf-web-login/wallet-adapter-react" "0.1.2"
+    bignumber.js "^9.1.2"
+    dayjs "^1.11.11"
+    react "^18.0.0"
+    react-dom "^18.0.0"
 
 "@aelf-web-login/wallet-adapter-base@0.1.2":
   version "0.1.2"
@@ -76,16 +69,12 @@
   dependencies:
     eventemitter3 "^5.0.1"
 
-"@aelf-web-login/wallet-adapter-bridge@0.1.17-alpha.6":
-  version "0.1.17-alpha.6"
-  resolved "https://mirrors.cloud.tencent.com/npm/@aelf-web-login/wallet-adapter-bridge/-/wallet-adapter-bridge-0.1.17-alpha.6.tgz#14f890df6f7f48bfff8239f72c812831afc65f36"
-  integrity sha512-rJ/Yc8syqc6snQICd6O8MaAeomvS0OQ/2t3WLeL+lBrs8W/euVMHY2CMNfujSxsU2vNjERk4RC1iAL4mvCjFeg==
+"@aelf-web-login/wallet-adapter-base@0.2.1-alpha.2":
+  version "0.2.1-alpha.2"
+  resolved "https://registry.yarnpkg.com/@aelf-web-login/wallet-adapter-base/-/wallet-adapter-base-0.2.1-alpha.2.tgz#e4a06b92bab64e1ea98c866fe8a30d56968c15b9"
+  integrity sha512-enTydgw8hWuJi4sEaOPw8KDYOPt8G2bOCIoZLziwp8ibkTG2N8RmOHHbOMpIpLNMttwCOP0FVj1yZ4B4i/lGpA==
   dependencies:
-    "@aelf-web-login/wallet-adapter-base" "0.1.17-alpha.6"
-    "@portkey/services" "^2.11.0"
-    "@reduxjs/toolkit" "^2.2.3"
-    react "^18.0.0"
-    react-dom "^18.0.0"
+    eventemitter3 "^5.0.1"
 
 "@aelf-web-login/wallet-adapter-bridge@0.1.2":
   version "0.1.2"
@@ -99,47 +88,47 @@
     react "^18.0.0"
     react-dom "^18.0.0"
 
-"@aelf-web-login/wallet-adapter-night-elf@0.1.17-alpha.6":
-  version "0.1.17-alpha.6"
-  resolved "https://mirrors.cloud.tencent.com/npm/@aelf-web-login/wallet-adapter-night-elf/-/wallet-adapter-night-elf-0.1.17-alpha.6.tgz#297b881874f608d9a4d3236486f1d382b81e5894"
-  integrity sha512-EWtFPHV7jsZsOENrS2BzI3uoNXvHJneFlXr4qwteE/YDnKBRs+5xTaWyayJaeFqt82bLEroks5Y9SJFa8Y+dcA==
+"@aelf-web-login/wallet-adapter-bridge@0.2.1-alpha.2":
+  version "0.2.1-alpha.2"
+  resolved "https://registry.yarnpkg.com/@aelf-web-login/wallet-adapter-bridge/-/wallet-adapter-bridge-0.2.1-alpha.2.tgz#c30e7302955e322e6cad5d725452d7f6f1295d28"
+  integrity sha512-GudZa/DpeNjxdZUYMr4ty+dWUvz/w2m3xaufkwJ15fPJ6dQ70XeD3gaxlr8zeOkMhNkPdkSU5dy7rD6PyJNaPw==
   dependencies:
-    "@aelf-web-login/wallet-adapter-base" "0.1.17-alpha.6"
-    "@portkey/contracts" "^2.11.0"
+    "@aelf-web-login/wallet-adapter-base" "0.2.1-alpha.2"
+    "@portkey/services" "^2.14.0-alpha.6"
+    "@reduxjs/toolkit" "^2.2.3"
+    react "^18.0.0"
+    react-dom "^18.0.0"
+
+"@aelf-web-login/wallet-adapter-night-elf@0.2.1-alpha.2":
+  version "0.2.1-alpha.2"
+  resolved "https://registry.yarnpkg.com/@aelf-web-login/wallet-adapter-night-elf/-/wallet-adapter-night-elf-0.2.1-alpha.2.tgz#0d2fecc240388395bb5816bf5aad592738340309"
+  integrity sha512-zBg5ZnHFft5FVE4JZ0+ZmmjLNsMWlTng/Shvk82dWUxEh+kb4+jUvbweVn/iK2X50Dh2VabFV+o2GsYXgEqVhA==
+  dependencies:
+    "@aelf-web-login/wallet-adapter-base" "0.2.1-alpha.2"
+    "@portkey/contracts" "^2.14.0-alpha.6"
     aelf-bridge "^0.0.11-alpha.4"
     bn.js "^5.2.1"
 
-"@aelf-web-login/wallet-adapter-portkey-aa@0.1.17-alpha.6":
-  version "0.1.17-alpha.6"
-  resolved "https://mirrors.cloud.tencent.com/npm/@aelf-web-login/wallet-adapter-portkey-aa/-/wallet-adapter-portkey-aa-0.1.17-alpha.6.tgz#ecbf61ea11ddfbc8387b023140ad74e4b8e2a751"
-  integrity sha512-7u3V44DNPWHt9cAThtx004pivsBDenZnrFBpdmeKSVRcBUaP1efACQmvB9SSVQQHuNZ+q1n7Y5WDK9hyTb3RGQ==
+"@aelf-web-login/wallet-adapter-portkey-aa@0.2.1-alpha.2":
+  version "0.2.1-alpha.2"
+  resolved "https://registry.yarnpkg.com/@aelf-web-login/wallet-adapter-portkey-aa/-/wallet-adapter-portkey-aa-0.2.1-alpha.2.tgz#9c1ae444f9815bb1ac06c0e9b7410965da856b42"
+  integrity sha512-sF5VmkDNJBqjRn22Se5wvrRuU2F4KOAoeuYylpi/ukvmlFH6WTuGWkY2EEOFJu5Pkj40kOzvbXsTcxX6iy4wpw==
   dependencies:
-    "@aelf-web-login/wallet-adapter-base" "0.1.17-alpha.6"
-    "@portkey/contracts" "^2.11.0"
-    "@portkey/utils" "^2.11.0"
+    "@aelf-web-login/wallet-adapter-base" "0.2.1-alpha.2"
+    "@portkey/contracts" "^2.14.0-alpha.6"
+    "@portkey/utils" "^2.14.0-alpha.6"
 
-"@aelf-web-login/wallet-adapter-portkey-discover@0.1.17-alpha.6":
-  version "0.1.17-alpha.6"
-  resolved "https://mirrors.cloud.tencent.com/npm/@aelf-web-login/wallet-adapter-portkey-discover/-/wallet-adapter-portkey-discover-0.1.17-alpha.6.tgz#a0e23bfb996875fa908566d7c456e5a5b3c68b98"
-  integrity sha512-55iMbuvzAI/Jwt4IwzgmpH3vyfa0k+VawhyJAYihQ4npBs+96z5nT3soujMOwXwqB4/8B9Wg1mcqo0nUDu91GQ==
+"@aelf-web-login/wallet-adapter-portkey-discover@0.2.1-alpha.2":
+  version "0.2.1-alpha.2"
+  resolved "https://registry.yarnpkg.com/@aelf-web-login/wallet-adapter-portkey-discover/-/wallet-adapter-portkey-discover-0.2.1-alpha.2.tgz#13ebac2022d5d72573d34fa42d848685f16ba107"
+  integrity sha512-78D2QtPdlc+7ri4svWmXcvrtbuGD+6PbJHbTUfrHQYOby7uAVnpYGRGPfKn2cgOzbJnioi1ucJ/8WaYPXJtXdg==
   dependencies:
-    "@aelf-web-login/wallet-adapter-base" "0.1.17-alpha.6"
-    "@portkey/contracts" "^2.11.0"
+    "@aelf-web-login/wallet-adapter-base" "0.2.1-alpha.2"
+    "@portkey/contracts" "^2.14.0-alpha.6"
     "@portkey/detect-provider" "^2.3.5-alpha.2"
     "@portkey/provider-types" "^2.3.5-alpha.2"
-    "@portkey/utils" "^2.11.0"
+    "@portkey/utils" "^2.14.0-alpha.6"
     bn.js "^5.2.1"
-
-"@aelf-web-login/wallet-adapter-react@0.1.17-alpha.6":
-  version "0.1.17-alpha.6"
-  resolved "https://mirrors.cloud.tencent.com/npm/@aelf-web-login/wallet-adapter-react/-/wallet-adapter-react-0.1.17-alpha.6.tgz#8e1151e552b42d9005f0d9c96ccba5131ad8295d"
-  integrity sha512-I9+oVJkc8iaz3Jh76itKcjURi/aTIgP4U0UsQRLIj3obRC3k3kJpfL905h4tNENZvXozrTKEOrpiAWfdU032Og==
-  dependencies:
-    "@aelf-web-login/wallet-adapter-base" "0.1.17-alpha.6"
-    "@aelf-web-login/wallet-adapter-bridge" "0.1.17-alpha.6"
-    react "^18.0.0"
-    react-dom "^18.0.0"
-    vconsole "^3.15.1"
 
 "@aelf-web-login/wallet-adapter-react@0.1.2":
   version "0.1.2"
@@ -147,6 +136,17 @@
   integrity sha512-enEH/MRizCguQ4Dx0vUFootLqPAXIwIB1+rzXQ3TlhQ9qbt2QdFFajS/8BDxxoK0qYtl37XzgHKqZW3Nmnn1eA==
   dependencies:
     "@aelf-web-login/wallet-adapter-bridge" "0.1.2"
+    react "^18.0.0"
+    react-dom "^18.0.0"
+    vconsole "^3.15.1"
+
+"@aelf-web-login/wallet-adapter-react@0.2.1-alpha.2":
+  version "0.2.1-alpha.2"
+  resolved "https://registry.yarnpkg.com/@aelf-web-login/wallet-adapter-react/-/wallet-adapter-react-0.2.1-alpha.2.tgz#0c53e871dd6098f3aebcd686d86608d96ab7e071"
+  integrity sha512-Df2IT796HI4xK45Ijml3rNp0kidorpTefwu99JKXZDi050B0cm6204O6tBJPYw3xQ1NV45LdspV+fXh/bOrnsg==
+  dependencies:
+    "@aelf-web-login/wallet-adapter-base" "0.2.1-alpha.2"
+    "@aelf-web-login/wallet-adapter-bridge" "0.2.1-alpha.2"
     react "^18.0.0"
     react-dom "^18.0.0"
     vconsole "^3.15.1"
@@ -2813,23 +2813,32 @@
     schema-utils "^4.2.0"
     source-map "^0.7.3"
 
-"@portkey/accounts@^2.12.1-alpha.1", "@portkey/accounts@^2.13.1":
-  version "2.13.1"
-  resolved "https://mirrors.cloud.tencent.com/npm/@portkey/accounts/-/accounts-2.13.1.tgz#2f91ecdcee641f09dafd4253f9ed6a78ca2024e9"
-  integrity sha512-EvZX9Jw/+ZyE7EX4DIRGoOXC2tSXBYkhh9REu2PhkAY07CxeM5xDpp+VmRyFP+HPUxf7iNOstxMo5hiGXDcY4g==
+"@portkey/accounts@^2.15.9":
+  version "2.15.9"
+  resolved "https://registry.yarnpkg.com/@portkey/accounts/-/accounts-2.15.9.tgz#21c7b01f0a4016a836c240852ff93cd01dca907b"
+  integrity sha512-sYAUzXlpTPcWVkmGTRYba9ixcetqc/2NIGhPelO2wxAlv/eN/Q6bqlTs5uBjWdmckaOPjigo1+IJNk7hJsqW+w==
   dependencies:
-    "@portkey/types" "^2.13.1"
-    "@portkey/utils" "^2.13.1"
-    "@portkey/validator" "^2.13.1"
+    "@portkey/types" "^2.15.9"
+    "@portkey/utils" "^2.15.9"
+    "@portkey/validator" "^2.15.9"
 
-"@portkey/contracts@^2.11.0", "@portkey/contracts@^2.12.1-alpha.1", "@portkey/contracts@^2.13.1":
-  version "2.13.1"
-  resolved "https://mirrors.cloud.tencent.com/npm/@portkey/contracts/-/contracts-2.13.1.tgz#3e8a41a71d37394f0c5ec865d1ef26996980c397"
-  integrity sha512-Y62yTg5r/Cvu4FIWzeblR5JM3e/GOTwKB/ghBoQf7GRi0qE7QGkHToFVLJaCSlS4IxGY+Ud0xwlnigKStm6bFQ==
+"@portkey/contracts@^2.14.0-alpha.6":
+  version "2.15.3"
+  resolved "https://registry.yarnpkg.com/@portkey/contracts/-/contracts-2.15.3.tgz#80b09d5514abe96e77ce71271d5e6e86df6a5a64"
+  integrity sha512-mwgawWDIPd+Dq2f8D2uAViO0O4tVkJ54Qd6HotksR3E1jX9rD8E/iTIktVfzkH20x+eIAlGIBh/o4+wznLW8uw==
   dependencies:
     "@portkey/provider-types" "^2.1.0"
-    "@portkey/types" "^2.13.1"
-    "@portkey/utils" "^2.13.1"
+    "@portkey/types" "^2.15.3"
+    "@portkey/utils" "^2.15.3"
+
+"@portkey/contracts@^2.15.9":
+  version "2.15.9"
+  resolved "https://registry.yarnpkg.com/@portkey/contracts/-/contracts-2.15.9.tgz#4fca1259d758c9553cbc3cc43d517856e02ac14f"
+  integrity sha512-L0ZZLqmozdYRpkFakFtqHo+tC8iJL/r3rO2BoG1v+RW/mZevIgrK70M9LtV2TD1XXVRC2iOAaz5nmDOtQpePog==
+  dependencies:
+    "@portkey/provider-types" "^2.1.0"
+    "@portkey/types" "^2.15.9"
+    "@portkey/utils" "^2.15.9"
 
 "@portkey/detect-provider@^2.0.0-alpha.2":
   version "2.3.4"
@@ -2845,24 +2854,24 @@
   dependencies:
     "@portkey/provider-types" "^2.3.5-alpha.5"
 
-"@portkey/did-ui-react@2.12.1-alpha.1":
-  version "2.12.1-alpha.1"
-  resolved "https://mirrors.cloud.tencent.com/npm/@portkey/did-ui-react/-/did-ui-react-2.12.1-alpha.1.tgz#fd5ff0c70e8ecd5308e6f959708420ba90789dfb"
-  integrity sha512-zzLBvPQrC9aMlQGoYsqLnvuAoICBMav105g4jR9K94+XYirmuaE6W2bTOmC+1GYH8fyoKguAEEAN0d0d/rJXSA==
+"@portkey/did-ui-react@2.15.9":
+  version "2.15.9"
+  resolved "https://registry.yarnpkg.com/@portkey/did-ui-react/-/did-ui-react-2.15.9.tgz#b078e4895302dbd514e4e6a4593aa3cfbc59e517"
+  integrity sha512-0d4WPZrdsj9ZVX0l/rA1GAJELEj1Vphzvfv+2NRpGwkbof1qCYqflecBt9BM6nPX4oV91UhNZrV0YibhfrC8Xw==
   dependencies:
     "@matt-block/react-recaptcha-v2" "^2.0.0"
-    "@portkey/accounts" "^2.12.1-alpha.1"
-    "@portkey/contracts" "^2.12.1-alpha.1"
-    "@portkey/did" "^2.12.1-alpha.1"
-    "@portkey/graphql" "^2.12.1-alpha.1"
-    "@portkey/onboarding" "^2.12.1-alpha.1"
-    "@portkey/ramp" "^2.12.1-alpha.1"
-    "@portkey/request" "^2.12.1-alpha.1"
-    "@portkey/services" "^2.12.1-alpha.1"
-    "@portkey/socket" "^2.12.1-alpha.1"
-    "@portkey/types" "^2.12.1-alpha.1"
-    "@portkey/utils" "^2.12.1-alpha.1"
-    "@portkey/validator" "^2.12.1-alpha.1"
+    "@portkey/accounts" "^2.15.9"
+    "@portkey/contracts" "^2.15.9"
+    "@portkey/did" "^2.15.9"
+    "@portkey/graphql" "^2.15.9"
+    "@portkey/onboarding" "^2.15.9"
+    "@portkey/ramp" "^2.15.9"
+    "@portkey/request" "^2.15.9"
+    "@portkey/services" "^2.15.9"
+    "@portkey/socket" "^2.15.9"
+    "@portkey/types" "^2.15.9"
+    "@portkey/utils" "^2.15.9"
+    "@portkey/validator" "^2.15.9"
     "@rc-component/portal" "1.0.2"
     antd "4.24.14"
     antd-mobile "5.33.0"
@@ -2871,32 +2880,43 @@
     lottie-web "5.9.6"
     moment "^2.29.4"
     query-string "^7.1.1"
+    rc-notification "^4.0.0"
     react-i18next "^11.18.6"
     react-qrcode-logo "2.9.0"
     react-use "^17.4.0"
     spark-md5 "^3.0.2"
     uuid "^8.3.2"
 
-"@portkey/did@^2.12.1-alpha.1":
-  version "2.13.1"
-  resolved "https://mirrors.cloud.tencent.com/npm/@portkey/did/-/did-2.13.1.tgz#7da32b4904360918eb4162e4a89240534bef932a"
-  integrity sha512-tqR6O7T8S6rBRIDkFXmXC3KJYkFx+F6OJY+kZ503BQp25kSCwdQ5abLi7CfB6C+WCKmKTdl7xz2dBKNwVL21qg==
+"@portkey/did@^2.15.9":
+  version "2.15.9"
+  resolved "https://registry.yarnpkg.com/@portkey/did/-/did-2.15.9.tgz#500f0410fa6826c7bba892ece1223e0ba696ffdc"
+  integrity sha512-GfRDRtaNzYu1ZLxO8AalzCUH/GLlsPZBT3u7JM9BPz0Qy6zMGDuhIOcWNDMuWt1wuCkqEbWhPnem7/++vSZmMQ==
   dependencies:
-    "@portkey/accounts" "^2.13.1"
-    "@portkey/contracts" "^2.13.1"
-    "@portkey/graphql" "^2.13.1"
-    "@portkey/request" "^2.13.1"
-    "@portkey/services" "^2.13.1"
-    "@portkey/types" "^2.13.1"
-    "@portkey/utils" "^2.13.1"
+    "@portkey/accounts" "^2.15.9"
+    "@portkey/contracts" "^2.15.9"
+    "@portkey/graphql" "^2.15.9"
+    "@portkey/request" "^2.15.9"
+    "@portkey/services" "^2.15.9"
+    "@portkey/types" "^2.15.9"
+    "@portkey/utils" "^2.15.9"
 
-"@portkey/graphql@^2.12.1-alpha.1", "@portkey/graphql@^2.13.1":
-  version "2.13.1"
-  resolved "https://mirrors.cloud.tencent.com/npm/@portkey/graphql/-/graphql-2.13.1.tgz#9d0dc21854040dd9229b666a9a1a8929637cd3a6"
-  integrity sha512-WyJ0g2Y8SchyilqTT+0C4Hv7PwhQ1tzFedoQOiyVa8fxoIgyrLCJFyhwbyl77vZ11nWIzJO34is7bRxcQneEgA==
+"@portkey/graphql@^2.15.3":
+  version "2.15.3"
+  resolved "https://registry.yarnpkg.com/@portkey/graphql/-/graphql-2.15.3.tgz#30fe05d8ad6d5dcda55bf8872e3fa470a6f8170a"
+  integrity sha512-laqmYzPCVHWj3PikbpvUzJEUk80Pe2U4Em+9w34yVGJWxPniLt/f8G7R7AG6cjklxtIkTwTvz83t/BOHMgKz+g==
   dependencies:
     "@apollo/client" "^3.7.3"
-    "@portkey/types" "^2.13.1"
+    "@portkey/types" "^2.15.3"
+    graphql "^16.6.0"
+    subscriptions-transport-ws "^0.11.0"
+
+"@portkey/graphql@^2.15.9":
+  version "2.15.9"
+  resolved "https://registry.yarnpkg.com/@portkey/graphql/-/graphql-2.15.9.tgz#af9a9eb4108e487b1e64fcb26f80c2ca420d13a1"
+  integrity sha512-muhNjcTbIF9sGzNI+iEwn9K+KAwSgol3q5GEeC+G2JAt5S8+LMvkT7fQYMh3tklPlFFi03rd+msM35C4U9rCOg==
+  dependencies:
+    "@apollo/client" "^3.7.3"
+    "@portkey/types" "^2.15.9"
     graphql "^16.6.0"
     subscriptions-transport-ws "^0.11.0"
 
@@ -2910,14 +2930,14 @@
     graphql "^16.6.0"
     subscriptions-transport-ws "^0.11.0"
 
-"@portkey/onboarding@^2.12.1-alpha.1":
-  version "2.13.1"
-  resolved "https://mirrors.cloud.tencent.com/npm/@portkey/onboarding/-/onboarding-2.13.1.tgz#19b0c511468e9ac2c2f5433ced8ffb6aba8e73f7"
-  integrity sha512-qSbocaNTsQ3c9R9mE2ubx6IXt+X2Qz0R58mXnkha5xB0lBTZSK3Kvh8Ep22kpizmKacBqh0uzgLFAzjRjwPXbA==
+"@portkey/onboarding@^2.15.9":
+  version "2.15.9"
+  resolved "https://registry.yarnpkg.com/@portkey/onboarding/-/onboarding-2.15.9.tgz#1f17017fd4c1962d3121a067f1aeea3536553436"
+  integrity sha512-MatcYM1z5ytf6Qxx1B75PMBxAmRyKluATsfn9mEiH9oAqEQc25GlgtBiXby/GmrWGkMqXgt/XVkVlqMbe3gacw==
   dependencies:
     "@portkey/detect-provider" "^2.0.0-alpha.2"
-    "@portkey/types" "^2.13.1"
-    "@portkey/utils" "^2.13.1"
+    "@portkey/types" "^2.15.9"
+    "@portkey/utils" "^2.15.9"
     bowser "^2.11.0"
     query-string "^7.1.1"
 
@@ -2945,23 +2965,31 @@
     "@portkey/types" "^2.0.0-alpha.0"
     "@types/readable-stream" "^2.3.15"
 
-"@portkey/ramp@^2.12.1-alpha.1":
-  version "2.13.1"
-  resolved "https://mirrors.cloud.tencent.com/npm/@portkey/ramp/-/ramp-2.13.1.tgz#3d5184e31576297d6bad68c1e1bfd7b290d34e6a"
-  integrity sha512-u+VzMbbuTdYuBK9lD6YwhNto/9RMGJ6DDr4vMnK5ca7KUftPeeDkrFhAF9DgC4FnJYLb/4XSIxnY/wVWylAvVA==
+"@portkey/ramp@^2.15.9":
+  version "2.15.9"
+  resolved "https://registry.yarnpkg.com/@portkey/ramp/-/ramp-2.15.9.tgz#bedef5cdb376fd371a1db90e86b25bba743547a9"
+  integrity sha512-EquBOqh2hgW7oaq5VOpgaYG1GwMDg2FzeDD5hm77ocbwak54yXHYh1vxE5Rsk1GMqctjvgb4/CTaNYJkBE/phg==
   dependencies:
-    "@portkey/request" "^2.13.1"
-    "@portkey/socket" "^2.13.1"
-    "@portkey/types" "^2.13.1"
-    "@portkey/utils" "^2.13.1"
+    "@portkey/request" "^2.15.9"
+    "@portkey/socket" "^2.15.9"
+    "@portkey/types" "^2.15.9"
+    "@portkey/utils" "^2.15.9"
     query-string "^7.1.1"
 
-"@portkey/request@^2.12.1-alpha.1", "@portkey/request@^2.13.1":
-  version "2.13.1"
-  resolved "https://mirrors.cloud.tencent.com/npm/@portkey/request/-/request-2.13.1.tgz#db22366e7c2eca4a16f412ea4274ae4c0aad88d0"
-  integrity sha512-lBUK/tZ/rMGIwYa/3z/KU7xAwueenCexwhfzdQlhNVwFAbV6d1mbm5ORZL2kE1m+3CmLW+1NyaVIPE9RBW0Qlw==
+"@portkey/request@^2.15.3":
+  version "2.15.3"
+  resolved "https://registry.yarnpkg.com/@portkey/request/-/request-2.15.3.tgz#7bbbacd2bb57461d861f0b63f090747b599723eb"
+  integrity sha512-DjkwDkhwKefGOHUd7BS9BXc3c8j7CsprQIvWX1MA1P3Tp5d1uxnmmyM8bJlUlNMNqfQX86/I9Zw0YAIDg5Ap/g==
   dependencies:
-    "@portkey/types" "^2.13.1"
+    "@portkey/types" "^2.15.3"
+    query-string "^7.1.1"
+
+"@portkey/request@^2.15.9":
+  version "2.15.9"
+  resolved "https://registry.yarnpkg.com/@portkey/request/-/request-2.15.9.tgz#fd36ad143ea094f4a4005e9dad6fa7bbc91bbe3b"
+  integrity sha512-YQ1Ba99ZhlRYtk+ILPFjoL/CT4DPoBbXyllNNSyI8ay9LXet/9uvep6ENF5d+NJYoMeXJeYmE8VyDqCt2Iyl1w==
+  dependencies:
+    "@portkey/types" "^2.15.9"
     query-string "^7.1.1"
 
 "@portkey/request@^2.7.1-alpha.0":
@@ -2982,38 +3010,60 @@
     "@portkey/types" "^2.7.1-alpha.0"
     "@portkey/utils" "^2.7.1-alpha.0"
 
-"@portkey/services@^2.11.0", "@portkey/services@^2.12.1-alpha.1", "@portkey/services@^2.13.1":
-  version "2.13.1"
-  resolved "https://mirrors.cloud.tencent.com/npm/@portkey/services/-/services-2.13.1.tgz#1439d045c4cbd5b39d308859283353dd202eba4c"
-  integrity sha512-aC/n04Zl48Y0SBK1FcxQVFv3GsxkNHihRlJhjwX1dAE1qumOx2w6JEOjVvDy3wNMGBl/65n9SpPXZ+JBjtU1Ww==
+"@portkey/services@^2.14.0-alpha.6":
+  version "2.15.3"
+  resolved "https://registry.yarnpkg.com/@portkey/services/-/services-2.15.3.tgz#9acd6da16fb142257e8d80622b1846ac6eba3bbf"
+  integrity sha512-SO45BaYdxwX5vWTcTwlMovQhsTUejJqqqAn6Sx1JC6eI8Z4kY8g02je20gkrZBiixS6I/ZLC3b4NWjjLQvkSMw==
   dependencies:
-    "@portkey/graphql" "^2.13.1"
-    "@portkey/request" "^2.13.1"
-    "@portkey/types" "^2.13.1"
-    "@portkey/utils" "^2.13.1"
+    "@portkey/graphql" "^2.15.3"
+    "@portkey/request" "^2.15.3"
+    "@portkey/types" "^2.15.3"
+    "@portkey/utils" "^2.15.3"
 
-"@portkey/socket@^2.12.1-alpha.1", "@portkey/socket@^2.13.1":
-  version "2.13.1"
-  resolved "https://mirrors.cloud.tencent.com/npm/@portkey/socket/-/socket-2.13.1.tgz#7fc04bdd8c8f3ffb698aeba11d03049ec23a4aa7"
-  integrity sha512-I5B0zAClTl9k1mlMXgik8mpf2YoJA+XWPnJ0cyd7Br86ywZLs16aifQwNqqcmkW773422F0H2mBXx9mVaB6aNg==
+"@portkey/services@^2.15.9":
+  version "2.15.9"
+  resolved "https://registry.yarnpkg.com/@portkey/services/-/services-2.15.9.tgz#c15cd72257af2949e2fb7e46cdf8b5e9b92f0518"
+  integrity sha512-L8pRbGdwC5rpNkcWkcLeNpSZ9e8JJYUjB8w/bQIfgDsblCVYo36jr8zTHHgFtIA0ljPgaG1cJuSIQozf4Sgikg==
+  dependencies:
+    "@portkey/graphql" "^2.15.9"
+    "@portkey/request" "^2.15.9"
+    "@portkey/types" "^2.15.9"
+    "@portkey/utils" "^2.15.9"
+
+"@portkey/socket@^2.15.9":
+  version "2.15.9"
+  resolved "https://registry.yarnpkg.com/@portkey/socket/-/socket-2.15.9.tgz#f2a2c6c3df9e7b261e5f97cba1847572d2a6d2c0"
+  integrity sha512-FEEzNgOTxdmYOuve8CmbeCj+2+Dk+xRhr9r1267XikeSmjnFIol25QqhUmUBf8g93TQ6ZCGxQZDU0Oqvm+QIIg==
   dependencies:
     "@abp/signalr" "^7.0.0"
-    "@portkey/utils" "^2.13.1"
+    "@portkey/utils" "^2.15.9"
 
 "@portkey/types@^2.0.0-alpha.0", "@portkey/types@^2.7.1-alpha.0", "@portkey/types@^2.8.0":
   version "2.8.0"
   resolved "https://mirrors.cloud.tencent.com/npm/@portkey/types/-/types-2.8.0.tgz"
   integrity sha512-TEklTHe6qe9krbDzBYt30AJ+yUC6+ZgSnmwoFC7TXc6nYKehZIz9opW9966JoF5EnVRKWNflH0D+kvB6/cj3MA==
 
-"@portkey/types@^2.12.1-alpha.1", "@portkey/types@^2.13.1":
-  version "2.13.1"
-  resolved "https://mirrors.cloud.tencent.com/npm/@portkey/types/-/types-2.13.1.tgz#c0dc9742d65ca5600924f484abe0590d8f672855"
-  integrity sha512-htWT6Uwvyao9k9hUCMW51xU/Rzg3RUxsXAGrnq0YQ/Hv81loUPdgxo/4fsEYfK9y8mTVMbWhe4CmCJNaxD8SGA==
+"@portkey/types@^2.15.3":
+  version "2.15.3"
+  resolved "https://registry.yarnpkg.com/@portkey/types/-/types-2.15.3.tgz#25fbd71f20dfb0b01930efe7ef43c02f452e3742"
+  integrity sha512-JzSiPjoWv8Gcj7/HCbnhcPWuhP4Y1Eu6t8uGmz/ZAq2HS4pr/G8Nx90VGkrLv6ioxwpmNtZTr9nQa7/47jng+w==
 
-"@portkey/utils@^2.11.0", "@portkey/utils@^2.12.1-alpha.1", "@portkey/utils@^2.13.1":
-  version "2.13.1"
-  resolved "https://mirrors.cloud.tencent.com/npm/@portkey/utils/-/utils-2.13.1.tgz#f4e53b7273159f806f070ade8f72f19a859a46ef"
-  integrity sha512-nccdajCYatH+4LS/PYLG24pg7SwbyLvQNoaTgoN8IzKvFWnlwNj6+5RRpOvYMfQGxpNtD+4+JZghfsb9YFJxog==
+"@portkey/types@^2.15.9":
+  version "2.15.9"
+  resolved "https://registry.yarnpkg.com/@portkey/types/-/types-2.15.9.tgz#57d3c446737ab4d985ee5eacc99139d0276caec2"
+  integrity sha512-8i5EdHGnXfRYyeoHeRR5TnSYM3dEUUE0n3rAkZO2+2mlpbJI2jFNUkcmOcBKCL9Jc9LE+mWddKt5Fc+48rFP3w==
+
+"@portkey/utils@^2.14.0-alpha.6", "@portkey/utils@^2.15.3":
+  version "2.15.3"
+  resolved "https://registry.yarnpkg.com/@portkey/utils/-/utils-2.15.3.tgz#f25da4ecbf3965e3effe96f2be37d5262435358b"
+  integrity sha512-V1kkONmkGnzn1eO3m4278V+cAD5Mc2Nauvf0bvO5CeQUIRf4Jn+Oy3ByKT4hpqaLIQ9UwslDdm9v4jAL/ENdxw==
+  dependencies:
+    node-forge "^1.3.1"
+
+"@portkey/utils@^2.15.9":
+  version "2.15.9"
+  resolved "https://registry.yarnpkg.com/@portkey/utils/-/utils-2.15.9.tgz#9f1c7c9d0127c45c9a9ed6aa480dc28861c543c9"
+  integrity sha512-RQBwXETarAwOBQqq6J0ovxb69mjM3PV5eib9mHAJPNutFsrcQU8wmkX57fOgF96GZ7UmW9wfAKguXknxXw7JFQ==
   dependencies:
     node-forge "^1.3.1"
 
@@ -3024,10 +3074,10 @@
   dependencies:
     node-forge "^1.3.1"
 
-"@portkey/validator@^2.12.1-alpha.1", "@portkey/validator@^2.13.1":
-  version "2.13.1"
-  resolved "https://mirrors.cloud.tencent.com/npm/@portkey/validator/-/validator-2.13.1.tgz#443ad34aa7547c99b8534f5d82f7535fa7d02f9e"
-  integrity sha512-+FsqqrxtWnrn3wLprDljXCdYy6JPfAjzRGscEMSC31VB1h6obVGjdaqqI/c8Bzhx0ixzm78LmqIPtSQ0o3x9SQ==
+"@portkey/validator@^2.15.9":
+  version "2.15.9"
+  resolved "https://registry.yarnpkg.com/@portkey/validator/-/validator-2.15.9.tgz#0aea65d4ea62bcb3fb9ae9b2e8ed8453b02c9d35"
+  integrity sha512-RsN5YjqfiFMc2B1k86Y11KahDOlSDHKjXX23Ag8NC3zhFRST0GdbgsGEEaEU63ETcb4n92C56nlIFWi9W07H7Q==
 
 "@protobufjs/aspromise@^1.1.1", "@protobufjs/aspromise@^1.1.2":
   version "1.1.2"
@@ -4439,10 +4489,12 @@
   resolved "https://mirrors.cloud.tencent.com/npm/@types/node/-/node-10.17.60.tgz"
   integrity sha512-F0KIgDJfy2nA3zMLmWGKxcH2ZVEtCZXHHdOQs2gSaQ27+lNeEfGxzkIw90aXswATX7AZ33tahPbzy6KAfUreVw==
 
-"@types/node@^16.18.89":
-  version "16.18.104"
-  resolved "https://mirrors.cloud.tencent.com/npm/@types/node/-/node-16.18.104.tgz"
-  integrity sha512-OF3keVCbfPlkzxnnDBUZJn1RiCJzKeadjiW0xTEb0G1SUJ5gDVb3qnzZr2T4uIFvsbKJbXy1v2DN7e2zaEY7jQ==
+"@types/node@^18.18.89":
+  version "18.19.64"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.19.64.tgz#122897fb79f2a9ec9c979bded01c11461b2b1478"
+  integrity sha512-955mDqvO2vFf/oL7V3WiUtiz+BugyX8uVbaT2H8oj3+8dRyH2FLiNdowe7eNqRM7IOIZvzDH76EoAT+gwm6aIQ==
+  dependencies:
+    undici-types "~5.26.4"
 
 "@types/parse-json@^4.0.0":
   version "4.0.2"
@@ -12170,7 +12222,7 @@ rc-motion@^2.2.0:
     classnames "^2.2.1"
     rc-util "^5.43.0"
 
-rc-notification@~4.6.0:
+rc-notification@^4.0.0, rc-notification@~4.6.0:
   version "4.6.1"
   resolved "https://mirrors.cloud.tencent.com/npm/rc-notification/-/rc-notification-4.6.1.tgz#068e8674f4bd7926a447eca512915d4b41b15c91"
   integrity sha512-NSmFYwrrdY3+un1GvDAJQw62Xi9LNMSsoQyo95tuaYrcad5Bn9gJUL8AREufRxSQAQnr64u3LtP3EUyLYT6bhw==
@@ -14564,6 +14616,11 @@ underscore@1.12.1:
   version "1.12.1"
   resolved "https://mirrors.cloud.tencent.com/npm/underscore/-/underscore-1.12.1.tgz"
   integrity sha512-hEQt0+ZLDVUMhebKxL4x1BTtDY7bavVofhZ9KZ4aI26X9SRaE+Y3m83XUL1UP2jn8ynjndwCCpEHdUG+9pP1Tw==
+
+undici-types@~5.26.4:
+  version "5.26.5"
+  resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-5.26.5.tgz#bcd539893d00b56e964fd2657a4866b221a65617"
+  integrity sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==
 
 undici-types@~6.13.0:
   version "6.13.0"
