@@ -34,24 +34,24 @@ export const socialLoginAuthCurr = async ({
   type,
   clientId,
   redirectURI = "",
+  network,
   guardianIdentifier,
   serviceUrl = "",
   useCurrentTelegramAuth = true,
   approveDetail,
   managerAddress,
   verifyType,
-  network,
 }: {
   type: ISocialLogin;
   clientId?: string;
   redirectURI?: string;
+  network?: NetworkType;
   guardianIdentifier?: string;
   serviceUrl?: string;
   useCurrentTelegramAuth?: boolean;
   approveDetail?: IApproveDetail;
   managerAddress?: string;
   verifyType?: any;
-  network?: NetworkType;
 }): Promise<{
   token: string;
   idToken?: string;
