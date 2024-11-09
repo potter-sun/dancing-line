@@ -45,7 +45,7 @@ export const socialLoginAuthCurr = async ({
   type: ISocialLogin;
   clientId?: string;
   redirectURI?: string;
-  network?: string;
+  network: string;
   guardianIdentifier?: string;
   serviceUrl?: string;
   useCurrentTelegramAuth?: boolean;
