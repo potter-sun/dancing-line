@@ -59,11 +59,11 @@ export const socialLoginAuthCurr = async ({
   timestamp?: number;
   provider: ISocialLogin;
 } | void> => {
-  // const serviceURI = getServiceUrl();
-  // const socketURI = getCommunicationSocketUrl();
-  // const ctw = getCustomNetworkType();
-  // const currentStorage = getStorageInstance();
-  console.log(network, "network=====redirectURI");
+  const serviceURI = getServiceUrl();
+  const socketURI = getCommunicationSocketUrl();
+  const ctw = getCustomNetworkType();
+  const currentStorage = getStorageInstance();
+  console.log(network, clientId, "network=====redirectURI");
   // console.log(serviceURI, "serviceURI");
   // const openlogin = new OpenLogin({
   //   customNetworkType: ctw,
