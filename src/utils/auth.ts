@@ -40,7 +40,7 @@ export const socialLoginAuthCurr = async ({
   approveDetail,
   managerAddress,
   verifyType,
-  network = "MAINNET",
+  network,
 
 }: {
   type: ISocialLogin;
