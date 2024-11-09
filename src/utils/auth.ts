@@ -40,7 +40,7 @@ export const socialLoginAuthCurr = async ({
   approveDetail,
   managerAddress,
   verifyType,
-  networkType = "MAINNET",
+  network = "MAINNET",
 
 }: {
   type: ISocialLogin;
@@ -52,7 +52,7 @@ export const socialLoginAuthCurr = async ({
   approveDetail?: IApproveDetail;
   managerAddress?: string;
   verifyType?: any;
-  networkType?: NetworkType;
+  network?: NetworkType;
 }): Promise<{
   token: string;
   idToken?: string;
@@ -64,7 +64,7 @@ export const socialLoginAuthCurr = async ({
   // const socketURI = getCommunicationSocketUrl();
   // const ctw = getCustomNetworkType();
   // const currentStorage = getStorageInstance();
-  console.log(networkType, "network=====redirectURI");
+  console.log(typeof network, "network=====redirectURI");
   // console.log(serviceURI, "serviceURI");
   // const openlogin = new OpenLogin({
   //   customNetworkType: ctw,

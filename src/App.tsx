@@ -50,7 +50,7 @@ function App(props: React.PropsWithChildren) {
     try {
       socialLoginAuthCurr({
         type: "Telegram",
-        networkType: "TESTNET",
+        network: "TESTNET",
       })
         .then((res: any) => {
           console.log(res, "result==ressocialLoginAuthCurr");
@@ -97,7 +97,7 @@ function App(props: React.PropsWithChildren) {
           onClick={async () => {
             const result = await socialLoginAuthCurr({
               type: "Telegram",
-              networkType: "TESTNET",
+              network: "TESTNET",
             });
             console.log(result, "result==");
           }}>
