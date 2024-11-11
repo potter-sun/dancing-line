@@ -32,26 +32,11 @@ export const telegramLoginAuth = async () => {
 
 export const socialLoginAuthCurr = async ({
   type,
-  clientId,
-  redirectURI = "",
   network,
-  guardianIdentifier,
-  serviceUrl = "",
-  useCurrentTelegramAuth = true,
-  approveDetail,
-  managerAddress,
-  verifyType,
+
 }: {
-  type: ISocialLogin;
-  clientId?: string;
-  redirectURI?: string;
-  network?: NetworkType;
-  guardianIdentifier?: string;
-  serviceUrl?: string;
-  useCurrentTelegramAuth?: boolean;
-  approveDetail?: IApproveDetail;
-  managerAddress?: string;
-  verifyType?: any;
+  type: any;
+  network?: any;
 }): Promise<{
   token: string;
   idToken?: string;
@@ -59,11 +44,7 @@ export const socialLoginAuthCurr = async ({
   timestamp?: number;
   provider: ISocialLogin;
 } | void> => {
-  const serviceURI = getServiceUrl();
-  const socketURI = getCommunicationSocketUrl();
-  const ctw = getCustomNetworkType();
-  const currentStorage = getStorageInstance();
-  console.log(network, clientId, "network=====redirectURI");
+  console.log(network, type, "network=====redirectURI");
   // console.log(serviceURI, "serviceURI");
   // const openlogin = new OpenLogin({
   //   customNetworkType: ctw,
