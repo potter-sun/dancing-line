@@ -14,7 +14,7 @@ export default function AelfDemo() {
   const debug = process.env.REACT_APP_DEBUG
   useEffect(() => {
     if (debug) {
-      import('eruda').then((lib) => lib.default.init());
+      // import('eruda').then((lib) => lib.default.init());
     }
   }, [debug]);
   return <>
