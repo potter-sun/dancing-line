@@ -104,16 +104,7 @@ function App(props: React.PropsWithChildren) {
           button
         </button>
       </div>
-      <div>
-        <button
-          onClick={async () => {
-            new ABCK(2);
-
-            new ABCK({ a: 1, b: 2 });
-          }}>
-          ABCK
-        </button>
-      </div>
+      <div></div>
     </WebLoginProviderELE>
   );
 }

@@ -1,5 +1,5 @@
 import Connector from '@/components/Connector';
-import WebGLProvider from '@/components/WebGLProvider';
+// import WebGLProvider from '@/components/WebGLProvider';
 import { useEffect } from 'react';
 
 const Aelf = () => {

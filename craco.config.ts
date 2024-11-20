@@ -82,6 +82,7 @@ export default {
       ),
       new nodePolyfillPlugin({
         excludeAliases: ["console"],
+        additionalAliases: ['process', 'punycode'],
         globals: {
           Buffer: true, // can also be 'build', 'dev', or false
           global: true,

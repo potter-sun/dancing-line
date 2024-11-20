@@ -1,9 +1,4 @@
-
-import WebGLProvider from "@/components/WebGLProvider"
+// import WebGLProvider from "@/components/WebGLProvider"
 export default function DLDemo() {
-  return (
-    <div>
-      <WebGLProvider />
-    </div>
-  )
+  return <div>{/* <WebGLProvider /> */}</div>;
 }
