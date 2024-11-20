@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 const Aelf = () => {
   return <>
     <Connector />
-    <WebGLProvider />
+    {/* <WebGLProvider /> */}
   </>
 };
 
