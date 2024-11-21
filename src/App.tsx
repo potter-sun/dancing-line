@@ -9,12 +9,7 @@ import {
   TelegramPlatform,
 } from "@portkey/did-ui-react";
 import { socialLoginAuthCurr } from "./utils/auth";
-import { sleep } from "./tools/schedual";
-class ABCK {
-  constructor(options: any) {
-    console.log(options);
-  }
-}
+
 
 function WebLoginProviderELE(props: { children: React.ReactNode }) {
   const bridgeAPI = init(config);
