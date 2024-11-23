@@ -1,9 +1,10 @@
 /* eslint-disable import/no-anonymous-default-export */
 const { whenProd } = require('@craco/craco')
 const pluginCracoLess = require('craco-less');
-const uglifyJsPlugin = require('uglifyjs-webpack-plugin')
+// const uglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const nodePolyfillPlugin = require('node-polyfill-webpack-plugin')
 // const CompressionPlugin = require('compression-webpack-plugin');
+const TerserPlugin = require("terser-webpack-plugin");
 
 const path = require("path")
 export default {
@@ -68,15 +69,23 @@ export default {
     plugins: [
       ...whenProd(
         () => [
-          new uglifyJsPlugin({
-            uglifyOptions: {
+          // new uglifyJsPlugin({
+          //   uglifyOptions: {
+          //     compress: {
+          //       drop_debugger: true,
+          //       drop_console: false,
+          //     }
+          //   },
+          //   sourceMap: false,
+          //   parallel: true
+          // }),
+          new TerserPlugin({
+            terserOptions: {
               compress: {
-                drop_debugger: true,
                 drop_console: false,
-              }
+                drop_debugger: true,
+              },
             },
-            sourceMap: false,
-            parallel: true
           })
         ], []
       ),
